@@ -1,0 +1,6 @@
+name: 'Node JSON Data Extended'
+type: module
+description: 'This module will provide a config form at the site settings to save the API and with that user can get node JSONdata.'
+core: 8.x
+core_version_requirement: ^8||^9
+package: 'Node JSON Data'

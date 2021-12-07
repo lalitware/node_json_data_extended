@@ -1,0 +1,16 @@
+node_json_data_extended.ExtendedSiteInformationForm:
+  path: '/admin/config/system/site-information'
+  defaults:
+    _form: '\Drupal\node_json_data_extended\Form\ExtendedSiteInformationForm'
+    _title: 'Extended Site Information'
+  requirements:
+    _access: 'TRUE'
+
+node_json_data_extended.extended_api_controller:
+  path: '/data/{enteredApi}/{enteredContentType}/{enteredId}'
+  defaults:
+    _controller: '\Drupal\node_json_data_extended\Controller\ExtendedApiController::index'
+    _title: 'External API Key'
+  methods:  [GET]
+  requirements:
+    _permission: 'access content'

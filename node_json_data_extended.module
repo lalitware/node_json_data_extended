@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains node_json_data_extended.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function node_json_data_extended_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the node_json_data_extended module.
+    case 'help.page.node_json_data_extended':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module will provide a config form at the site settings to save the API and with that user can get node JSONdata.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
